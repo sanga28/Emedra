@@ -1,0 +1,89 @@
+.content {
+  flex: 1;
+  padding: 30px;
+  background: #f9fafb;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.dashboard-header p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Stats Grid (3 cards now) */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Cards */
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-icon {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+/* Reports list */
+.report-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.report-list li {
+  margin-bottom: 6px;
+}
+
+/* Icon colors */
+.stat-icon.reports {
+  color: #2563eb; /* Blue */
+}
+
+.stat-icon.progress {
+  color: #16a34a; /* Green */
+}
+
+.stat-icon.predictions {
+  color: #f97316; /* Orange */
+}
+
+.stat-card h3 {
+  font-size: 16px;
+  color: #555;
+  margin: 0 0 10px 0;
+}
+
+.stat-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #333;
+}
